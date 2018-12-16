@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Socket.io</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+
+        <style>
+            .control {
+                margin-top: 10px;
+            }
+
+            #messages {
+                border: 1px black solid;
+                height: 500px;
+                width: 500px;
+                overflow: scroll;
+            }
+
+            .message {
+                margin-left: 5px;
+                margin-top: 3px;
+                word-wrap: break-word;
+            }
+
+            #users {
+                position: absolute;
+                top: 80px;
+                left: 520px;
+                float: left;
+            }
+
+            button{
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Messagerie instantanée</h1>
+        <div id="messages">
+        </div>
+        <div class="control">
+            <input type="text" name="" id="new_msg" placeholder="Entre ton message..."><button id="send">Envoyer</button>
+        </div>
+        <div id="users">
+            
+        </div>
+    </body>
+</html>
