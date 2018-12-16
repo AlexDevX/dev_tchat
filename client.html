@@ -26,13 +26,27 @@
 
             #users {
                 position: absolute;
-                top: 80px;
+                top: 90px;
                 left: 520px;
                 float: left;
+                height: 480px;
+                width: 170px;
+                border: 1px solid red;
             }
 
             button{
                 margin-left: 10px;
+            }
+
+            li {
+            	margin-left: 10px;
+            	text-decoration: none;
+            }
+
+            h6 {
+            	position: absolute;
+                top: 50px;
+                left: 520px;
             }
         </style>
     </head>
@@ -43,6 +57,7 @@
         <div class="control">
             <input type="text" name="" id="new_msg" placeholder="Entre ton message..."><button id="send">Envoyer</button>
         </div>
+        <h6>Liste des connectés</h6>
         <div id="users">
             
         </div>
